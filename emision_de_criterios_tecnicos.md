@@ -1,23 +1,21 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Recibir solicitud escrita de Proveeduría<br/>con cartel y ofertas foliadas.<br/>Consignar sello de recibido en original y copia]
+    A([Inicio]) --> B[Recibe solicitud con ofertas]
 
-    B --> C[Crear tabla de comparación con<br/>características solicitadas por<br/>línea y dispositivo]
+    B --> C[Crea tabla de comparación con<br/>características solicitadas por<br/>línea y dispositivo]
 
-    C --> D[Verificar que cada oferta cumpla<br/>con los requerimientos del cartel]
+    C --> D[Verifica que cada oferta cumpla<br/>con los requerimientos del cartel]
 
     D --> E{¿Datos insuficientes<br/>en alguna oferta?}
 
-    E -- Sí --> F[Solicitar datos faltantes<br/>a Proveeduría]
+    E -- Sí --> F[Solicita datos faltantes<br/>a Proveeduría]
     F --> D
 
-    E -- No --> G[Completar la tabla; identificar por color:<br/>Cumple / No Cumple / Excede]
+    E -- No --> G[Completa la tabla; identifica por color:<br/>Cumple / No Cumple]
 
-    G --> H[Generar oficio con tabla resumen,<br/>empresas que cumplen y<br/>sustento técnico de la decisión]
+    G --> H[Genera oficio con tabla resumen,<br/>empresas que cumplen y<br/>sustento técnico de la decisión]
 
-    H --> I[Agregar anexos: tabla de comparación<br/>y material de apoyo de cada proveedor]
+    H --> I[Traslada oficio a Proveeduría, verifica<br/>sello de recibido en la copia de archivo<br/>y devuelve el expediente]
 
-    I --> J[Trasladar oficio a Proveeduría, verificar<br/>sello de recibido en la copia de archivo<br/>y devolver el expediente]
-
-    J --> FIN([Fin])
+    I --> FIN([Fin])
 ```

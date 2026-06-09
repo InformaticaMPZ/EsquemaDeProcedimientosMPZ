@@ -1,37 +1,34 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Jefe de Informática identifica necesidad<br/>de adquirir un bien o servicio<br/>de uso institucional inmediato]
+    A([Inicio]) --> B[Coordinador de TI identifica la necesidad<br/>de adquirir un bien o servicio:<br/>desarrollo, mantenimiento o servicio digital]
 
-    B --> C{¿Monto ≤ ₡1.200.000<br/>y adquisición urgente<br/>o de menor cuantía?}
+    B --> C{¿Monto ≤ ₡1.300.000<br/>y hay fondos disponibles?}
 
-    C -- No --> D[Canalizar por proceso de<br/>contratación ordinaria]
+    C -- No --> D[Canaliza por proceso de<br/>contratación ordinaria]
     D --> FIN1([Fin])
 
-    C -- Sí --> E[Elaborar solicitud con descripción,<br/>precio estimado, justificación de urgencia<br/>y proveedor propuesto]
+    C -- Sí --> E[Elaborador registra solicitud en el ERP con:<br/>descripción del bien, justificación técnica,<br/>costo y proveedor]
 
-    E --> F[Someter solicitud a aprobación de<br/>la Alcaldía con justificación técnica<br/>y presupuesto adjunto]
+    E --> F[Coordinador de TI somete la solicitud<br/>a aprobación de la Alcaldía Municipal<br/>con justificación técnica y presupuesto]
 
     F --> G{¿Alcaldía aprueba?}
 
-    G -- No --> H[Devolver con observaciones]
+    G -- No --> H[Devuelve con observaciones<br/>para reformulación]
     H --> E
 
-    G -- Sí --> I[Obtener al menos tres cotizaciones<br/>de proveedores cuando el monto<br/>y la naturaleza del bien lo permitan]
+    G -- Sí --> I[Coordinador de TI aprueba la compra en el ERP]
 
-    I --> J[Realizar la compra y obtener factura<br/>a nombre de la Municipalidad de<br/>Pérez Zeledón, cédula jurídica N° 3-014-042056]
+    I --> J[Elaborador realiza depósito<br/>en cuenta del proveedor]
 
-    J --> K[Entregar expediente a Tesorería:<br/>solicitud aprobada, cotizaciones,<br/>factura original y comprobante de recepción]
+    J --> K[Coordinador de TI realiza la compra y solicita<br/>factura a nombre de la Municipalidad de<br/>Pérez Zeledón, cédula jurídica N° 3-012-042056]
 
-    K --> L{¿Documentación<br/>completa y correcta?}
+    K --> L[Coordinador de TI evidencia el registro<br/>mediante correo o registros digitales]
 
-    L -- No --> M[Devolver para corrección]
-    M --> K
+    L --> M[Elaborador registra factura<br/>y solicita revisión]
 
-    L -- Sí --> N[Tesorería procesa el reintegro<br/>al fondo de caja chica]
+    M --> N[Tesorería verifica que el registro<br/>esté completo y correcto]
 
-    N --> O[Registrar la transacción en el<br/>sistema contable institucional - SICI]
+    N --> O[Tesorería finaliza el procedimiento]
 
-    O --> P[Archivar el expediente completo:<br/>solicitud, aprobación, cotizaciones,<br/>facturas y comprobantes de recepción]
-
-    P --> FIN2([Fin])
+    O --> FIN2([Fin])
 ```

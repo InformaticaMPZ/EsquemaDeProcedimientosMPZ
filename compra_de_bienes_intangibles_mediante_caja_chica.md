@@ -1,30 +1,34 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Jefe de Informática identifica necesidad<br/>de adquirir un bien intangible:<br/>licencia, suscripción o servicio digital]
+    A([Inicio]) --> B[Coordinador de TI identifica la necesidad<br/>de adquirir un bien intangible:<br/>licencia, suscripción o servicio digital]
 
-    B --> C{¿Monto ≤ ₡1.200.000<br/>y hay fondos disponibles?}
+    B --> C{¿Monto ≤ ₡1.300.000<br/>y hay fondos disponibles?}
 
-    C -- No --> D[Canalizar por proceso de<br/>contratación ordinaria]
+    C -- No --> D[Canaliza por proceso de<br/>contratación ordinaria]
     D --> FIN1([Fin])
 
-    C -- Sí --> E[Elaborar solicitud con: descripción del bien,<br/>justificación técnica, costo estimado<br/>y proveedor propuesto]
+    C -- Sí --> E[Elaborador registra solicitud en el ERP con:<br/>descripción del bien, justificación técnica,<br/>costo y proveedor]
 
-    E --> F[Someter solicitud a aprobación de<br/>la Alcaldía Municipal con justificación<br/>técnica y presupuesto adjunto]
+    E --> F[Coordinador de TI somete la solicitud<br/>a aprobación de la Alcaldía Municipal<br/>con justificación técnica y presupuesto]
 
     F --> G{¿Alcaldía aprueba?}
 
-    G -- No --> H[Devolver con observaciones<br/>para reformulación]
+    G -- No --> H[Devuelve con observaciones<br/>para reformulación]
     H --> E
 
-    G -- Sí --> I[Realizar la compra y obtener factura<br/>a nombre de la Municipalidad de<br/>Pérez Zeledón, cédula jurídica N° 3-014-042056]
+    G -- Sí --> I[Coordinador de TI aprueba la compra en el ERP]
 
-    I --> J[Entregar expediente a Tesorería:<br/>solicitud aprobada, factura original<br/>y comprobante de activación del bien intangible]
+    I --> J[Elaborador realiza depósito<br/>en cuenta del proveedor]
 
-    J --> K[Tesorería verifica que la documentación<br/>esté completa y correcta.<br/>Procesa el reintegro al fondo de caja chica]
+    J --> K[Coordinador de TI realiza la compra y solicita<br/>factura a nombre de la Municipalidad de<br/>Pérez Zeledón, cédula jurídica N° 3-012-042056]
 
-    K --> L[Registrar la transacción en el<br/>sistema contable institucional - SICI]
+    K --> L[Coordinador de TI evidencia el registro<br/>mediante correo o registros digitales]
 
-    L --> M[Archivar el expediente completo:<br/>solicitud, aprobación de Alcaldía,<br/>factura y comprobantes]
+    L --> M[Elaborador registra factura<br/>y solicita revisión]
 
-    M --> FIN2([Fin])
+    M --> N[Tesorería verifica que el registro<br/>esté completo y correcto]
+
+    N --> O[Tesorería finaliza el procedimiento]
+
+    O --> FIN2([Fin])
 ```

@@ -1,32 +1,32 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Usuario presenta boleta de solicitud<br/>al Departamento de Informática]
+    A([Inicio]) --> B[Usuario presenta la solicitud<br/>al Departamento de Informática]
 
     B --> C{¿PSI aprueba la boleta?}
 
     C -- No --> D[Notifica al usuario para corregir]
     D --> B
 
-    C -- Sí --> E[Recopilar información: entrevistas,<br/>documentos de datos y procesos.<br/>Obtener aprobación del usuario]
+    C -- Sí --> E[Recopila información: entrevistas,<br/>documentos de datos y procesos.<br/>Obtiene aprobación del usuario]
 
-    E --> F[Analizar riesgos, recursos, limitaciones<br/>y factibilidad. Presentar presupuesto]
+    E --> F[Analiza riesgos, recursos, limitaciones<br/>y factibilidad. Presenta presupuesto]
 
-    F --> G[Elaborar ERS con requerimientos<br/>funcionales, técnicos y de desempeño]
+    F --> G[Elabora ERS con requerimientos<br/>funcionales, técnicos y de desempeño]
 
-    G --> H[Diseñar: modelar requerimientos<br/>funcionales y estructuras de datos]
+    G --> H[Diseña: modela requerimientos<br/>funcionales y estructuras de datos]
 
-    H --> I[Desarrollar: codificar, diseñar formularios,<br/>generar reportes y crear módulos]
+    H --> I[Desarrolla: codifica, diseña formularios,<br/>genera reportes y crea módulos]
 
-    I --> J[Ejecutar pruebas y llevar<br/>hoja de correcciones]
+    I --> J[Coordina pruebas y valora<br/>posibles correcciones]
 
     J --> K{¿Sistema funciona correctamente?}
 
-    K -- No --> L[Corregir errores]
+    K -- No --> L[Corrige errores]
     L --> J
 
-    K -- Sí --> M[Implementar: instaladores, manuales,<br/>modificar BD y entregar al usuario.<br/>Obtener aprobación]
+    K -- Sí --> M[Implementa: instaladores, manuales,<br/>modifica BD y entrega al usuario.<br/>Obtiene aprobación]
 
-    M --> N[Retroalimentar: respaldar productos<br/>y documentar conocimiento adquirido]
+    M --> N[Retroalimenta: respalda productos<br/>y documenta conocimiento adquirido]
 
     N --> FIN([Fin])
 ```

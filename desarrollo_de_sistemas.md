@@ -15,17 +15,15 @@ flowchart TD
 
     G --> H[Desarrollar el sistema según<br/>especificaciones aprobadas aplicando<br/>estándares de codificación segura]
 
-    H --> I[Ejecutar pruebas unitarias, de integración<br/>y de seguridad en el ambiente de<br/>desarrollo. Registrar y corregir defectos]
+    H --> I[Ejecutar pruebas unitarias, de integración<br/>y de seguridad. Corregir los<br/>defectos encontrados]
 
     I --> J{¿Sistema aprueba<br/>pruebas de aceptación<br/>del usuario - UAT?}
 
     J -- No --> H
 
-    J -- Sí --> K[Planificar y ejecutar el despliegue en<br/>producción en la ventana de mantenimiento<br/>autorizada. Notificar a usuarios afectados]
+    J -- Sí --> K[Coordinador TI aprueba y ejecuta el<br/>despliegue en el ambiente de producción]
 
-    K --> L[Elaborar y entregar documentación técnica:<br/>manual técnico, manual de usuario y<br/>diagrama de BD. Almacenar en repositorio]
+    K --> L[Realizar seguimiento post-implementación<br/>durante 30 días. Atender incidencias<br/>de estabilización]
 
-    L --> M[Realizar seguimiento post-implementación<br/>durante 30 días. Atender incidencias<br/>de estabilización. Emitir acta de cierre]
-
-    M --> FIN2([Fin])
+    L --> FIN2([Fin])
 ```

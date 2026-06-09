@@ -1,13 +1,13 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Coordinador TI identifica necesidad y elabora<br/>especificaciones técnicas detalladas<br/>con criterios objetivos y verificables]
+    A([Inicio]) --> B[Coordinador TI identifica necesidad y elabora<br/>las especificaciones técnicas detalladas]
 
     B --> C{¿Hay contenido<br/>presupuestario disponible?}
 
     C -- No --> D[Gestionar modificación presupuestaria<br/>o incluir en el siguiente período]
     D --> FIN1([Fin])
 
-    C -- Sí --> E[Determinar modalidad de contratación<br/>según monto: Compra Directa,<br/>Licitación Abreviada o Mayor Cuantía]
+    C -- Sí --> E[Determinar modalidad de contratación<br/>según monto: Licitación Reducida,<br/>Licitación Menor o Licitación Mayor]
 
     E --> F[Elaborar cartel técnico con especificaciones,<br/>requisitos de oferentes, criterios de evaluación,<br/>condiciones de entrega y garantías requeridas]
 
@@ -22,10 +22,10 @@ flowchart TD
 
     J --> K{¿Alguna oferta<br/>cumple las especificaciones<br/>técnicas?}
 
-    K -- No --> L[Declarar proceso desierto.<br/>Reformular cartel si aplica]
+    K -- No --> L[Declarar proceso desierto]
     L --> FIN2([Fin])
 
-    K -- Sí --> M[Proveeduría realiza análisis legal,<br/>aplica criterios de evaluación y emite<br/>recomendación de adjudicación]
+    K -- Sí --> M[Proveeduría / Asesoría Legal realiza análisis<br/>legal, aplica criterios de evaluación y emite<br/>recomendación de adjudicación]
 
     M --> N[Jerarca o instancia competente<br/>resuelve la adjudicación en SICOP<br/>y notifica al adjudicatario]
 
